@@ -1,0 +1,90 @@
+$x-shadow-01: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$x-shadow-02: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+$x-shadow-06: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+$y-shadow-01: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+$y-shadow-006: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+.UploadImagesBox,
+.imageSize,
+.actionBtns,
+.cropResultBox,
+.previewImagesBox {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.ant-upload {
+  box-shadow:
+    $x-shadow-01,
+    $y-shadow-006;
+}
+
+.ant-upload-list {
+  margin-top: 20px;
+}
+
+.imageSize {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 5px 0;
+  }
+  .ant-input-number-affix-wrapper {
+    box-shadow:
+      $x-shadow-02,
+      $y-shadow-01;
+  }
+}
+
+.toolbar-wrapper {
+  padding: 0px 24px;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
+
+.toolbar-wrapper .anticon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.toolbar-wrapper .anticon[disabled] {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.toolbar-wrapper .anticon:hover {
+  opacity: 0.3;
+}
+
+.previewImagesBox {
+  img {
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #fff;
+    vertical-align: super !important;
+    box-shadow:
+      $x-shadow-02,
+      $y-shadow-01;
+  }
+}
+
+.actionBtns {
+  button {
+    box-shadow:
+      $x-shadow-06,
+      $y-shadow-01;
+  }
+}
+
+.cropResultBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    box-shadow:
+      $x-shadow-06,
+      $y-shadow-01;
+  }
+}
